@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
 body {
 	font-family: 'Poppins', sans-serif;
+	margin: 0;
 }
 a {
 	text-decoration: none;
@@ -86,13 +87,54 @@ a.button {
 	box-shadow: grey 0px 1px 12px 0px;
 	border-radius: 6px;
 }
+
 .single-box img {
 	width: 100%;
 }
+.single-box h2 {
+	font-size: 28px;
+	font-weight: 500;
+	color: #18191f;
+}
+.single-box h3 {
+	font-size: 24px;
+	font-weight: normal;
+	color: #000000;
+}
+.single-box p {
+	font-size: 14px;
+	font-weight: bold;
+	color: #787885;
+	font-family: 'Inter', sans-serif;
+}
+
 a.see-more-btn {
 	color: #e02c6d;
 	float: right;
 	display: block;
 	font-weight: bold;
 	font-size: 16px;
+	margin-top: 30px;
+}
+footer.footer-area {
+	background: #0a0826;
+	width: 100%;
+}
+.footer-text {
+	color: #fff;
+	text-align: center;
+}
+.footer {
+	margin: 50px 0px;
+}
+.footer-text h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: -8px;
+}
+.footer-text p {
+	font-size: 14px;
+	font-weight: bold;
+	color: #d9dbe1;
+	line-height: 26px;
 }
