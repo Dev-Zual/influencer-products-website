@@ -6,13 +6,40 @@ body {
 a {
 	text-decoration: none;
 }
-main {
+#section-margin {
+	margin-bottom: 50px;
+}
+.main-area {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.logo-area h1 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #3a3a3a;
+}
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+}
+nav ul li {
+	list-style: none;
+	margin-right: 29px;
+}
+nav ul li a {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	color: #3a3a3a;
+}
+main,
+.top-header-area {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 /* middle header css */
-section.container {
+.container {
 	width: 1200px;
 	padding: 10px;
 }
@@ -29,12 +56,22 @@ section.container {
 	font-size: 16px;
 	color: #3a3a3a;
 	font-weight: 700;
+	margin-bottom: 36px;
 }
 a.button {
 	background: #e02c6d;
 	border-radius: 20px;
 	color: #fff;
 	padding: 10px 40px;
+	transition: all 0.5s;
+}
+.button:hover {
+	background: #fff;
+	border: 2px solid #e02c6d;
+	color: #3a3a3a;
+}
+i.fas.fa-arrow-right {
+	margin-left: 11px;
 }
 .top-middle-right img {
 	width: 70%;
@@ -46,8 +83,12 @@ a.button {
 }
 .logos {
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+	border: 1px;
+	border-bottom: 1px solid lightgray;
+	border-top: 1px solid lightgray;
+	padding: 25px 0px;
 }
 .logo {
 	margin-right: 50px;
@@ -101,8 +142,13 @@ a.button {
 	font-weight: normal;
 	color: #000000;
 }
-.single-box p {
-	font-size: 14px;
+span.rating-icon {
+	font-size: 13px;
+	color: orange;
+	margin-right: 11px;
+}
+.single-box .rting-point {
+	font-size: 19px;
 	font-weight: bold;
 	color: #787885;
 	font-family: 'Inter', sans-serif;
@@ -116,6 +162,39 @@ a.see-more-btn {
 	font-size: 16px;
 	margin-top: 30px;
 }
+
+/* contact us area css */
+.contact-us {
+	text-align: center;
+}
+.contact-us h1 {
+	font-family: 'Poppins';
+	font-weight: bold;
+	font-size: 40px;
+	color: #3a3a3a;
+	margin-bottom: 47px;
+}
+.contact-us input {
+	padding: 10px 20px;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	font-family: 'Poppins';
+	font-weight: bold;
+	width: 460px;
+}
+textarea#messege {
+	font-family: 'Poppins';
+	font-size: 17px;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	width: 460px;
+	padding: 20px;
+	font-weight: bold;
+}
+#submit-btn {
+	margin: 35px;
+}
+/* footer area starts css */
 footer.footer-area {
 	background: #0a0826;
 	width: 100%;
@@ -137,4 +216,23 @@ footer.footer-area {
 	font-weight: bold;
 	color: #d9dbe1;
 	line-height: 26px;
+}
+.social-icon {
+	text-align: center;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	margin-top: 23px;
+}
+.social-icon i {
+	/* margin-right: 10px; */
+	margin-top: 11px;
+	font-size: 20px;
+}
+.icon {
+	width: 40px;
+	height: 40px;
+	background: #22213c;
+	margin-right: 15px;
+	border-radius: 100%;
 }
