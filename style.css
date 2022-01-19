@@ -236,3 +236,46 @@ footer.footer-area {
 	margin-right: 15px;
 	border-radius: 100%;
 }
+/* responsive css herere */
+@media only screen and (max-width: 600px) {
+	.container {
+		width: 600px;
+	}
+	.top-header-area {
+		display: block;
+	}
+	.main-nav-area {
+		display: none;
+	}
+	.logo-area h1 {
+		text-align: center;
+	}
+	.top-middle-area {
+		display: grid;
+		grid-template-columns: none;
+	}
+	.top-middle-left {
+		text-align: center;
+	}
+	.top-middle-right img {
+		display: none;
+	}
+
+	.logos {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.logo img {
+		width: 30%;
+	}
+	.our-collection-box {
+		display: grid;
+		grid-template-columns: none;
+	}
+	.contact-us input {
+		width: 360px;
+	}
+	textarea#messege {
+		width: 360px;
+	}
+}
